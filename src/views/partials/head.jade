@@ -1,0 +1,17 @@
+// Place favicon.ico and apple-touch-icon.png in the root directory
+
+// build:css styles/vendor.css
+// bower:css
+link(rel="stylesheet", type="text/css", href="bower_components/fontawesome/css/font-awesome.min.css")
+// endbower
+// endbuild
+// build:css styles/main.css
+link(rel='stylesheet', href='styles/main.css')
+// endbuild
+
+<!--[if lt IE 9]><script src="scripts/vendor/selectivizr-1.0.2.min.js"></script><![endif]-->
+// build:js scripts/vendor.js
+script(type="text/javascript", src="bower_components/javascript-debug/ba-debug.min.js")
+script(type="text/javascript", src="bower_components/modernizr/modernizr.js")
+script(type="text/javascript", src="bower_components/respond/dest/respond.min.js")
+// endbuild
