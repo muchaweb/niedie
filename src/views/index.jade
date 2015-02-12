@@ -1,0 +1,78 @@
+doctype
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang="es").no-js
+  <!--<![endif]-->
+  head
+    meta(charset='utf-8')
+    title Nied Page
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+
+    // build:css styles/vendor.css
+    // bower:css
+
+    // endbower
+    // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+
+    <!--[if lt IE 9]><script src="scripts/vendor/selectivizr-1.0.2.min.js"></script><![endif]-->
+    // build:js scripts/vendor.js
+    script(type="text/javascript", src="bower_components/javascript-debug/ba-debug.min.js")
+    script(type="text/javascript", src="bower_components/modernizr/modernizr.js")
+    script(type="text/javascript", src="bower_components/respond/dest/respond.min.js")
+    // endbuild
+  body
+
+    <!--[if lt IE 8]>
+    .browsehappy
+      p
+        | Está utilizando un navegador <strong>obsoleto</strong>
+        | Por favor <a href="http://browsehappy.com/">actualice su navegador</a>
+        | para mejorar su experiencia.
+    <![endif]-->
+
+    div.logo-nied
+
+
+    <!--[if lt IE 9]>
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script.
+      window.jQuery || document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>')
+    <![endif]-->
+
+    <!--[if gt IE 8]><!-->
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script.
+      window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.1.min.js"><\/script>')
+    <!--<![endif]-->
+
+    // build:js scripts/plugins.js
+
+    // endbuild
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+      function() {
+      (b[l].q = b[l].q || []).push(arguments)
+      });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');

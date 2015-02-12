@@ -1,0 +1,25 @@
+{
+  "name": "niedie",
+  "version": "1.0.0",
+  "authors": [
+    "Noé Sánchez <zyznoe@gmail>"
+  ],
+  "main": "Gulpfile.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "selectivizr": "~1.0.2",
+    "respond": "~1.4.2",
+    "modernizr": "~2.8.3",
+    "javascript-debug": "*"
+  }
+}
